@@ -26,4 +26,3 @@ class Servidor:
             mensaje = pickle.loads(data)
             self.reloj.actualizar(mensaje['reloj'])
             print(f"Servidor recibió: {mensaje['contenido']} - Reloj: {self.reloj.obtener_valor()}")
-            # Aquí puedes implementar la lógica para manejar el mensaje recibido
